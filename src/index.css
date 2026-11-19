@@ -11,3 +11,52 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* डार्क मोड के लिए सॉफ्ट ग्रे थीम (आंखों को न चुभने वाली) */
+body[style*="background-color: rgb(18, 18, 18)"] {
+  color: #e0e0e0 !important;
+}
+
+/* कार्ड्स, About बॉक्स, और Edit Note पॉपअप (Modal) */
+body[style*="background-color: rgb(18, 18, 18)"] .card,
+body[style*="background-color: rgb(18, 18, 18)"] .modal-content,
+body[style*="background-color: rgb(18, 18, 18)"] .bg-light,
+body[style*="background-color: rgb(18, 18, 18)"] .accordion-item,
+body[style*="background-color: rgb(18, 18, 18)"] .accordion-button {
+  background-color: #1e1e1e !important;
+  color: #e0e0e0 !important;
+  border: 1px solid #383838 !important;
+}
+
+/* इनपुट बॉक्स और सर्च बार की चमकती सफेद लाइनों को सॉफ्ट ग्रे बनाएं */
+body[style*="background-color: rgb(18, 18, 18)"] .form-control {
+  background-color: #252525 !important;
+  color: #e4e4e4 !important;
+  border: 1px solid #444444 !important;
+  box-shadow: none !important;
+}
+
+body[style*="background-color: rgb(18, 18, 18)"] .form-control:focus {
+  background-color: #2a2a2a !important;
+  border-color: #6c757d !important;
+}
+
+body[style*="background-color: rgb(18, 18, 18)"] .form-control::placeholder {
+  color: #8e8e8e !important;
+}
+
+/* सभी सफेद बॉर्डर लाइनों और आइकन्स को साफ और सॉफ्ट रखें */
+body[style*="background-color: rgb(18, 18, 18)"] .border,
+body[style*="background-color: rgb(18, 18, 18)"] .border-top,
+body[style*="background-color: rgb(18, 18, 18)"] .modal-header,
+body[style*="background-color: rgb(18, 18, 18)"] .modal-footer,
+body[style*="background-color: rgb(18, 18, 18)"] hr {
+  border-color: #383838 !important;
+}
+
+body[style*="background-color: rgb(18, 18, 18)"] .text-muted {
+  color: #a0a0a0 !important;
+}
+
+body[style*="background-color: rgb(18, 18, 18)"] .btn-close {
+  filter: invert(1) grayscale(100%) brightness(150%);
+}
